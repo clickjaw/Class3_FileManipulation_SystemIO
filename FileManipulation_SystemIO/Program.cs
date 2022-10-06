@@ -9,7 +9,8 @@ namespace FileManipulation_SystemIO
         static void Main(String[] args)
         {
             string filePath = "../new-data.txt";
-            // string newFilePath = "../newNew-data.txt";
+            string newFilePath = "../new-data.txt";
+
             // Console.WriteLine("Hello World");
 
             FileReadAllTextAsBytes(filePath);
@@ -17,41 +18,41 @@ namespace FileManipulation_SystemIO
             FileReadAllTextAsArray(filePath);
             FileAddSomeLines(filePath);
             FileReadAllText(filePath);
-            // FileCreateNewFile(newFilePath);
+            FileCreateNewFile(newFilePath);
             // FileReadAllText(newFilePath);
         }
 
-        // static void FileCreateNewFile(string file)
-        // {
-        //     string[] words = { "I", "Have", "The", "Power!" };
-        //     try
-        //     {
-        //         using (StreamWriter sw = new StreamWriter(file))
-        //         {
-        //             try
-        //             {
-        //                 foreach (string word in words)
-        //                 {
-        //                     sw.WriteLine(word);
-        //                     sw.WriteLine("\n");
-        //                 }
-        //             }
-        //             catch (Exception e)
-        //             {
-        //                 throw;
-        //             }
-        //             finally
-        //             {
-        //                 sw.Close();
-        //             }
-        //         }
-        //     }
-        //     catch (Exception e)
-        //     {
+        static void FileCreateNewFile(string file)
+        {
+            string[] words = { "I", "Don't", "Have", "The", "Power!" };
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(file))
+                {
+                    try
+                    {
+                        foreach (string word in words)
+                        {
+                            sw.WriteLine(word);
+                            sw.WriteLine("\n");
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        throw;
+                    }
+                    finally
+                    {
+                        sw.Close();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
 
-        //         throw;
-        //     }
-        // }
+                throw;
+            }
+        }
 
         static void FileReadAllTextAsBytes(string file){
             byte[] bytes = File.ReadAllBytes(file);
@@ -88,6 +89,8 @@ namespace FileManipulation_SystemIO
 
             File.AppendAllText(file, "\n");
             File.AppendAllLines(file, words);
+
+            // File.Delete(file); // to delete the entire file
         }
 
     }
