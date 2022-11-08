@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tylermorgan/code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/FileManipulation_SystemIO.csproj",
+      "projectUniqueName": "/Users/tylermorgan/Code/Code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/FileManipulation_SystemIO.csproj",
       "projectName": "FileManipulation_SystemIO",
-      "projectPath": "/Users/tylermorgan/code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/FileManipulation_SystemIO.csproj",
+      "projectPath": "/Users/tylermorgan/Code/Code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/FileManipulation_SystemIO.csproj",
       "packagesPath": "/Users/tylermorgan/.nuget/packages/",
-      "outputPath": "/Users/tylermorgan/code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/obj/",
+      "outputPath": "/Users/tylermorgan/Code/Code401/ClassCodeAlong/Class3_FileManipulation_SystemIO/FileManipulation_SystemIO/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tylermorgan/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }
